@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import CountryList1 from "./StagingGround2";
 import CountryList2 from "./StagingGround3";
+import ErrorModal from "./ErrorModal";
+import Button from "./Button";
 
 const StagingGroundPrime = () => {
   const [error, setError] = useState("");
+  const [error2, setError2] = useState(false);
   const [preventFu, setPreventFu] = useState(false);
 
   const [fromInput, setFromInput] = useState(""); //input
@@ -81,56 +84,80 @@ const StagingGroundPrime = () => {
     setFromInput(event.target.value);
   };
 
+  // const handOnSubmit = (event) => {
+  //   event.preventDefault();
+
+  //   setPreventFu(!preventFu);
+  // };
+
   const handOnSubmit = (event) => {
-    event.preventDefault();
-    setPreventFu(!preventFu);
+    {
+      event.preventDefault();
+      setPreventFu(!preventFu);
+
+      if (fromInput.length === 0) {
+        setError2(true);
+      }
+
+      setFromInput("");
+      setToInput("");
+    }
   };
 
   return (
-    <div>
+    <>
+      {error2 && (
+        <ErrorModal
+          title="Error Encountered"
+          message="There is an error with your input"
+          okayClicked={setError2}
+        ></ErrorModal>
+      )}
       <div>
-        <label htmlFor="fromInput">From</label>
-        {/* <input type='text' onChange={handFromInput}></input> */}
-        <CountryList1 onChange={handFromInput} />
-      </div>
-      <br />
-      <br />
-      <div>
-        <label htmlFor="toInput">To</label>
-        {/* <input type='text' onChange={handToInput}></input> */}
-        <CountryList2 onChange={handToInput} />
-      </div>
-      <div>
-        <button onClick={handOnSubmit}>Click here</button>
-      </div>
-      <br />
-      <br />
-      {/* <label htmlFor="fromAbbrev" value={fromAbbrev}>
+        <div>
+          <label htmlFor="fromInput">From</label>
+          {/* <input type='text' onChange={handFromInput}></input> */}
+          <CountryList1 onChange={handFromInput} />
+        </div>
+        <br />
+        <br />
+        <div>
+          <label htmlFor="toInput">To</label>
+          {/* <input type='text' onChange={handToInput}></input> */}
+          <CountryList2 onChange={handToInput} />
+        </div>
+        <div>
+          <Button onClick={handOnSubmit}>Click here</Button>
+        </div>
+        <br />
+        <br />
+        {/* <label htmlFor="fromAbbrev" value={fromAbbrev}>
         From Zone: {fromAbbrev}
       </label>
       <br />
       <br /> */}
-      <label htmlFor="toTime" value={fromTimeStamp}>
-        From Time: {fromTimeStamp} {fromAbbrev}
-      </label>
-      {/* <br />
+        <label htmlFor="toTime" value={fromTimeStamp}>
+          From Time: {fromTimeStamp} {fromAbbrev}
+        </label>
+        {/* <br />
       <br />
       <label htmlFor="toAbbrev" value={toAbbrev}>
         To Zone: {toAbbrev}
       </label> */}
-      <br />
-      <br />
-      <label htmlFor="toTime" value={toTimeStamp}>
-        To Time: {toTimeStamp} {toAbbrev}
-      </label>
-      <br />
-      <br />
-      <label htmlFor="timeDiff" value={offset}>
-        Time Difference: {offset}
-      </label>
-      <br />
-      <br />
-    </div>
+        <br />
+        <br />
+        <label htmlFor="toTime" value={toTimeStamp}>
+          To Time: {toTimeStamp} {toAbbrev}
+        </label>
+        <br />
+        <br />
+        <label htmlFor="timeDiff" value={offset}>
+          Time Difference: {offset}
+        </label>
+        <br />
+        <br />
+      </div>
+    </>
   );
 };
 
