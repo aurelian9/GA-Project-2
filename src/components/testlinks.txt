@@ -1,6 +1,0 @@
-        const res = await fetch(url);
-        const data = await res.json();
-        setFromAbbrev(data.fromAbbreviation);
-        setToAbbrev(data.toAbbreviation);
-        setToTimeStamp(data.toTimestamp);
-        setOffset(data.offset);

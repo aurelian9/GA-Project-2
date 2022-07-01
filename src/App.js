@@ -6,8 +6,8 @@ import StagingGroundPrime from "./components/StagingGroundPrime";
 
 function App() {
   return (
-    <div>
-      <h2>TimeZone Converter BABY</h2>
+    <div className="app-div">
+      <h2>TimeZone Converter</h2>
       <StagingGroundPrime />
     </div>
   );
