@@ -9,8 +9,11 @@ html {
 }
 
 body {
-  margin: 0;
-  background-color: whitesmoke;
+  /* margin: 0; */
+  /* background-color: whitesmoke; */
+  background-image: url('19609.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .centered {
@@ -19,4 +22,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h2 {
+  color: #55b349;
 }

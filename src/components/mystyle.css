@@ -57,7 +57,8 @@
 .btn-container {
   margin: auto;
   width: 20%;
-  padding: 10px;
+  /* padding: 10px; */
+  padding-top: 50px;
 }
 
 .app-div {
@@ -73,6 +74,7 @@
   background-color: powderblue;
   border-radius: 12px;
   padding: 10px;
+  padding-bottom: 20px;
 }
 
 .more-labels {
