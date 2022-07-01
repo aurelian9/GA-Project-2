@@ -7,15 +7,15 @@ const StagingGroundPrime = () => {
   const [error, setError] = useState("");
   const [preventFu, setPreventFu] = useState(false);
 
-  const [fromInput, setFromInput] = useState(""); //input
-  const [fromAbbrev, setFromAbbrev] = useState(""); //output
+  const [fromInput, setFromInput] = useState(""); 
+  const [fromAbbrev, setFromAbbrev] = useState(""); 
   const [fromTimeStamp, setFromTimeStamp] = useState("");
 
-  const [toInput, setToInput] = useState(""); //input
-  const [toAbbrev, setToAbbrev] = useState(""); //output
-  const [toTimeStamp, setToTimeStamp] = useState(""); //output
+  const [toInput, setToInput] = useState(""); 
+  const [toAbbrev, setToAbbrev] = useState(""); 
+  const [toTimeStamp, setToTimeStamp] = useState(""); 
 
-  const [offset, setOffset] = useState(""); //output
+  const [offset, setOffset] = useState(""); 
 
   const jackJones = async (url) => {
     try {

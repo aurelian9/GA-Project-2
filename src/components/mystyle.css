@@ -4,7 +4,7 @@
   border: 5px solid #55b349;
   padding: 10px;
   background-color: powderblue;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 .input {
@@ -49,6 +49,7 @@
 
 .button:hover {
   transition-duration: 0.4s;
+  color: powderblue;
   background-color: #55b349;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
