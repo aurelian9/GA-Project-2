@@ -17,15 +17,18 @@ After accepting the applications, tutors and parents will be able to access each
 What technologies you used that helped you build this project. 
 
 ```
-Example:
-
-- React
-- Bootstrap with react
-- Ajax (axios) for API
-- etc..
-```
-
 - ReactJS
+- ExpressJS
+- NonSQL database: MongoDB
+- Mongoose 
+- POSTMAN
+- Jason Web Token
+- bcrypt
+- cors 
+- dotenv
+- nodemon 
+
+```
 
 
 ### Wireframes
