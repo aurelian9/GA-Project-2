@@ -35,11 +35,11 @@ What technologies you used that helped you build this project.
 
 Your step by step planning sketch of your project, that you can post them as an image in here.
 
-### User Stories
+# User Stories
 
 ## User must be able to: 
 
-# Parent/Vendor: 
+### Parent/Vendor: 
 - Register and create an account. 
 - Login with the account.
 - Update personal details.
@@ -47,7 +47,7 @@ Your step by step planning sketch of your project, that you can post them as an 
 - View and edit assignments/jobs.
 - View and accept tutor applications.
 
-# Tutor: 
+### Tutor: 
 - Register and create an account.
 - Login with account.
 - Update personal details.
