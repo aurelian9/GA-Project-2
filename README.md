@@ -37,22 +37,21 @@ Your step by step planning sketch of your project, that you can post them as an 
 
 ### User Stories
 
-A story of the project user, that explains the use of the project.
+## User must be able to: 
 
-```
-Example:
+# Parent/Vendor: 
+- Register and create an account. 
+- Login with the account.
+- Update personal details.
+- Create and delete assignments/jobs. 
+- View and edit assignments/jobs.
+- View and accept tutor applications.
 
-User must be able to:
-
-- View Example
-- Blablabla
-- Search Example
-- Fine Example
-- etc..
-
-```
-
----
+# Tutor: 
+- Register and create an account.
+- Login with account.
+- Update personal details.
+- View and apply for assignments/jobs. 
 
 ## Planning and Development Process
 
